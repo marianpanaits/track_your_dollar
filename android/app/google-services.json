@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "272299124968",
+    "project_id": "track-your-dollar",
+    "storage_bucket": "track-your-dollar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:272299124968:android:7584ee2ddf9103d4d9415d",
+        "android_client_info": {
+          "package_name": "com.example.track_your_dollar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBy_sY1m1VwEoquduhtQ2sHTHye8UvlOl8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
