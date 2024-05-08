@@ -50,6 +50,36 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
+  /// `Add category`
+  String get add_category {
+    return Intl.message(
+      'Add category',
+      name: 'add_category',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Amount`
+  String get amount {
+    return Intl.message(
+      'Amount',
+      name: 'amount',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Amount cannot be empty`
+  String get amount_required {
+    return Intl.message(
+      'Amount cannot be empty',
+      name: 'amount_required',
+      desc: '',
+      args: [],
+    );
+  }
+
   /// `Track Your Dollar`
   String get app_title {
     return Intl.message(
@@ -65,6 +95,36 @@ class S {
     return Intl.message(
       'Authentication failed',
       name: 'authentication_failed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Categories`
+  String get categories {
+    return Intl.message(
+      'Categories',
+      name: 'categories',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Category created successfully`
+  String get category_created_successfully {
+    return Intl.message(
+      'Category created successfully',
+      name: 'category_created_successfully',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Creating category...`
+  String get creating_category {
+    return Intl.message(
+      'Creating category...',
+      name: 'creating_category',
       desc: '',
       args: [],
     );
@@ -95,6 +155,16 @@ class S {
     return Intl.message(
       'There was an error sending the password reset email',
       name: 'error_resetting_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Failed to create category`
+  String get failed_to_create_category {
+    return Intl.message(
+      'Failed to create category',
+      name: 'failed_to_create_category',
       desc: '',
       args: [],
     );
@@ -135,6 +205,26 @@ class S {
     return Intl.message(
       'Log Out failed',
       name: 'logout_failed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name`
+  String get name {
+    return Intl.message(
+      'Name',
+      name: 'name',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Name cannot be empty`
+  String get name_cannot_be_empty {
+    return Intl.message(
+      'Name cannot be empty',
+      name: 'name_cannot_be_empty',
       desc: '',
       args: [],
     );

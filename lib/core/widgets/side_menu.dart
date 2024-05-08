@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:track_your_dollar/features/authentication/presentation/bloc/authentication_bloc.dart';
 import 'package:track_your_dollar/features/authentication/presentation/bloc/authentication_event.dart';
+import 'package:track_your_dollar/features/categories/presentation/pages/categories_page.dart';
 import 'package:track_your_dollar/generated/l10n.dart';
 
 class SideMenu extends StatefulWidget {
@@ -27,9 +28,15 @@ class _SideMenuState extends State<SideMenu> {
           ),
           ListTile(
             title: Text(S.of(context).settings),
-            onTap: () {
-              Navigator.pop(context);
-            },
+            onTap: () => Navigator.pop(context),
+          ),
+          ListTile(
+            title: Text(S.of(context).categories),
+            onTap: () => Navigator.of(context).push(MaterialPageRoute(
+              builder: (context) => CategoriesPage(
+                authenticationBloc: widget.authenticationBloc,
+              ),
+            )),
           ),
           ListTile(
             title: Text(S.of(context).logout),

@@ -22,19 +22,33 @@ class MessageLookup extends MessageLookupByLibrary {
 
   final messages = _notInlinedMessages(_notInlinedMessages);
   static Map<String, Function> _notInlinedMessages(_) => <String, Function>{
+        "add_category": MessageLookupByLibrary.simpleMessage("Add category"),
+        "amount": MessageLookupByLibrary.simpleMessage("Amount"),
+        "amount_required":
+            MessageLookupByLibrary.simpleMessage("Amount cannot be empty"),
         "app_title": MessageLookupByLibrary.simpleMessage("Track Your Dollar"),
         "authentication_failed":
             MessageLookupByLibrary.simpleMessage("Authentication failed"),
+        "categories": MessageLookupByLibrary.simpleMessage("Categories"),
+        "category_created_successfully": MessageLookupByLibrary.simpleMessage(
+            "Category created successfully"),
+        "creating_category":
+            MessageLookupByLibrary.simpleMessage("Creating category..."),
         "email": MessageLookupByLibrary.simpleMessage("Email"),
         "email_cannot_be_empty":
             MessageLookupByLibrary.simpleMessage("Email cannot be empty"),
         "error_resetting_password": MessageLookupByLibrary.simpleMessage(
             "There was an error sending the password reset email"),
+        "failed_to_create_category":
+            MessageLookupByLibrary.simpleMessage("Failed to create category"),
         "forgot_password":
             MessageLookupByLibrary.simpleMessage("Forgot Password?"),
         "login": MessageLookupByLibrary.simpleMessage("Log In"),
         "logout": MessageLookupByLibrary.simpleMessage("Log Out"),
         "logout_failed": MessageLookupByLibrary.simpleMessage("Log Out failed"),
+        "name": MessageLookupByLibrary.simpleMessage("Name"),
+        "name_cannot_be_empty":
+            MessageLookupByLibrary.simpleMessage("Name cannot be empty"),
         "password": MessageLookupByLibrary.simpleMessage("Password"),
         "password_confirmation":
             MessageLookupByLibrary.simpleMessage("Password Confirmation"),
