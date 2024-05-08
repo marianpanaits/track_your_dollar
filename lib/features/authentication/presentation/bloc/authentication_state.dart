@@ -28,3 +28,13 @@ class LogoutFailedState extends AuthenticationState {
 }
 
 class LogoutLoadingState extends AuthenticationState {}
+
+class ResetPasswordLoadingState extends AuthenticationState {}
+
+class ResetPasswordSuccessState extends AuthenticationState {}
+
+class ResetPasswordFailedState extends AuthenticationState {
+  final String? message;
+
+  const ResetPasswordFailedState(this.message);
+}

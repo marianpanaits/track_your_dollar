@@ -12,5 +12,7 @@ abstract class AuthenticationRepository {
 
   Future<Either<Failure, void>> logoutUser();
 
+  Future<Either<Failure, void>> resetPassword(String email);
+
   bool checkUserAuthenticated();
 }

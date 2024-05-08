@@ -50,21 +50,231 @@ class S {
     return Localizations.of<S>(context, S);
   }
 
-  /// `Track spendings here`
-  String get track_spendings {
-    return Intl.message(
-      'Track spendings here',
-      name: 'track_spendings',
-      desc: '',
-      args: [],
-    );
-  }
-
   /// `Track Your Dollar`
   String get app_title {
     return Intl.message(
       'Track Your Dollar',
       name: 'app_title',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Authentication failed`
+  String get authentication_failed {
+    return Intl.message(
+      'Authentication failed',
+      name: 'authentication_failed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email`
+  String get email {
+    return Intl.message(
+      'Email',
+      name: 'email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email cannot be empty`
+  String get email_cannot_be_empty {
+    return Intl.message(
+      'Email cannot be empty',
+      name: 'email_cannot_be_empty',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `There was an error sending the password reset email`
+  String get error_resetting_password {
+    return Intl.message(
+      'There was an error sending the password reset email',
+      name: 'error_resetting_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Forgot Password?`
+  String get forgot_password {
+    return Intl.message(
+      'Forgot Password?',
+      name: 'forgot_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Log In`
+  String get login {
+    return Intl.message(
+      'Log In',
+      name: 'login',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Log Out`
+  String get logout {
+    return Intl.message(
+      'Log Out',
+      name: 'logout',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Log Out failed`
+  String get logout_failed {
+    return Intl.message(
+      'Log Out failed',
+      name: 'logout_failed',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password`
+  String get password {
+    return Intl.message(
+      'Password',
+      name: 'password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password must be longer than 6 characters.`
+  String get password_minimum_six {
+    return Intl.message(
+      'Password must be longer than 6 characters.',
+      name: 'password_minimum_six',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password cannot be empty`
+  String get password_not_empty {
+    return Intl.message(
+      'Password cannot be empty',
+      name: 'password_not_empty',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password Confirmation`
+  String get password_confirmation {
+    return Intl.message(
+      'Password Confirmation',
+      name: 'password_confirmation',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password must contain at least one digit.`
+  String get password_digit_missing {
+    return Intl.message(
+      'Password must contain at least one digit.',
+      name: 'password_digit_missing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password must contain at least one lowercase letter.`
+  String get password_lowercase_missing {
+    return Intl.message(
+      'Password must contain at least one lowercase letter.',
+      name: 'password_lowercase_missing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Passwords do not match`
+  String get password_mismatch {
+    return Intl.message(
+      'Passwords do not match',
+      name: 'password_mismatch',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password reset email sent successfully`
+  String get password_reset_successfully {
+    return Intl.message(
+      'Password reset email sent successfully',
+      name: 'password_reset_successfully',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password must contain at least one special character.`
+  String get password_special_character_missing {
+    return Intl.message(
+      'Password must contain at least one special character.',
+      name: 'password_special_character_missing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Password must contain at least one uppercase letter.`
+  String get password_uppercase_missing {
+    return Intl.message(
+      'Password must contain at least one uppercase letter.',
+      name: 'password_uppercase_missing',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Register`
+  String get register {
+    return Intl.message(
+      'Register',
+      name: 'register',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Reset Password`
+  String get reset_password {
+    return Intl.message(
+      'Reset Password',
+      name: 'reset_password',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Sending password reset email...`
+  String get sending_reset_password_email {
+    return Intl.message(
+      'Sending password reset email...',
+      name: 'sending_reset_password_email',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Settings`
+  String get settings {
+    return Intl.message(
+      'Settings',
+      name: 'settings',
       desc: '',
       args: [],
     );
@@ -95,6 +305,56 @@ class S {
     return Intl.message(
       'Creating account...',
       name: 'signing_up',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Need an account? Register`
+  String get switch_to_register {
+    return Intl.message(
+      'Need an account? Register',
+      name: 'switch_to_register',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Have an account? Login`
+  String get switch_to_login {
+    return Intl.message(
+      'Have an account? Login',
+      name: 'switch_to_login',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Track spendings here`
+  String get track_spendings {
+    return Intl.message(
+      'Track spendings here',
+      name: 'track_spendings',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Welcome!`
+  String get welcome {
+    return Intl.message(
+      'Welcome!',
+      name: 'welcome',
+      desc: '',
+      args: [],
+    );
+  }
+
+  /// `Email is not in the correct format`
+  String get wrong_email_format {
+    return Intl.message(
+      'Email is not in the correct format',
+      name: 'wrong_email_format',
       desc: '',
       args: [],
     );

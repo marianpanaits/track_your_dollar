@@ -6,6 +6,7 @@ import 'package:track_your_dollar/features/authentication/data/repository/authen
 import 'package:track_your_dollar/features/authentication/domain/repository/authentication_repository.dart';
 import 'package:track_your_dollar/features/authentication/domain/usecase/check_user_authenticated_usecase.dart';
 import 'package:track_your_dollar/features/authentication/domain/usecase/logout_user_usecase.dart';
+import 'package:track_your_dollar/features/authentication/domain/usecase/reset_password_usecase.dart';
 import 'package:track_your_dollar/features/authentication/domain/usecase/sign_in_with_email_and_password_usecase.dart';
 import 'package:track_your_dollar/features/authentication/domain/usecase/sign_up_with_email_and_password_usecase.dart';
 import 'package:track_your_dollar/features/authentication/presentation/bloc/authentication_bloc.dart';
@@ -28,10 +29,12 @@ Future<void> init() async {
       () => SignUpWithEmailAndPasswordUseCase(di()));
   di.registerFactory<CheckUserAuthenticatedUseCase>(
       () => CheckUserAuthenticatedUseCase(di()));
+  di.registerFactory<ResetPasswordUseCase>(() => ResetPasswordUseCase(di()));
   di.registerFactory<LogoutUserUseCase>(() => LogoutUserUseCase(di()));
-  di.registerLazySingleton<AuthenticationBloc>(() => AuthenticationBloc(
+  di.registerFactory<AuthenticationBloc>(() => AuthenticationBloc(
       signInWithEmailAndPasswordUseCase: di(),
       signUpWithEmailAndPasswordUseCase: di(),
       logoutUserUseCase: di(),
+      resetPasswordUseCase: di(),
       checkUserAuthenticatedUseCase: di()));
 }

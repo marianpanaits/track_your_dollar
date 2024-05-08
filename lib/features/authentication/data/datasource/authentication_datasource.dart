@@ -19,6 +19,10 @@ class AuthenticationDatasource {
         email: email, password: password);
   }
 
+  Future<void> resetPassword({required String email}) async {
+    await _firebaseAuth.sendPasswordResetEmail(email: email);
+  }
+
   bool checkUserAuthenticated() {
     return _firebaseAuth.currentUser != null;
   }

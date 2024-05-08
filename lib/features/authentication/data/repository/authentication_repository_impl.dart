@@ -35,6 +35,12 @@ class AuthenticationRepositoryImpl extends AuthenticationRepository {
   }
 
   @override
+  Future<Either<Failure, void>> resetPassword(String email) {
+    return repositoryMixin
+        .call(() async => authenticationDatasource.resetPassword(email: email));
+  }
+
+  @override
   bool checkUserAuthenticated() {
     return authenticationDatasource.checkUserAuthenticated();
   }

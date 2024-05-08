@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:track_your_dollar/features/authentication/presentation/bloc/authentication_bloc.dart';
 import 'package:track_your_dollar/features/authentication/presentation/bloc/authentication_event.dart';
+import 'package:track_your_dollar/generated/l10n.dart';
 
 class SideMenu extends StatefulWidget {
   final AuthenticationBloc authenticationBloc;
@@ -22,16 +23,16 @@ class _SideMenuState extends State<SideMenu> {
             decoration: BoxDecoration(
               color: Theme.of(context).colorScheme.primary,
             ),
-            child: const Text('Welcome!'),
+            child: Text(S.of(context).welcome),
           ),
           ListTile(
-            title: const Text('Settings'),
+            title: Text(S.of(context).settings),
             onTap: () {
               Navigator.pop(context);
             },
           ),
           ListTile(
-            title: const Text('Logout'),
+            title: Text(S.of(context).logout),
             onTap: () {
               Navigator.pop(context);
               widget.authenticationBloc.add(LogoutUserEvent());

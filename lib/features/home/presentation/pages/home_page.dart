@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:track_your_dollar/core/widgets/loader_dialog.dart';
 import 'package:track_your_dollar/core/widgets/side_menu.dart';
+import 'package:track_your_dollar/core/widgets/toaster.dart';
 import 'package:track_your_dollar/features/authentication/presentation/bloc/authentication_bloc.dart';
 import 'package:track_your_dollar/features/authentication/presentation/bloc/authentication_state.dart';
 import 'package:track_your_dollar/features/authentication/presentation/pages/login_register_page.dart';
@@ -36,11 +37,7 @@ class _HomePageState extends State<HomePage> {
             ),
           );
         } else if (state is LogoutFailedState) {
-          ScaffoldMessenger.of(context).showSnackBar(
-            SnackBar(
-              content: Text(state.message ?? 'Logout failed'),
-            ),
-          );
+          Toaster.showToast(state.message ?? S.of(context).logout_failed);
         }
       },
       builder: (context, state) {
